@@ -1,0 +1,24 @@
+//
+//  CDAdvanceFilter-Prefix.pch
+//  CDAdvanceFilter
+//
+//  Created by Calios on 8/24/16.
+//  Copyright © 2016 Calios. All rights reserved.
+//
+
+#ifndef CDAdvanceFilter_Prefix_pch
+#define CDAdvanceFilter_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import <PureLayout/PureLayout.h>
+#import <MJExtension/MJExtension.h>
+
+#import "CDAdvanceFilter.h"
+
+#endif /* CDAdvanceFilter_Prefix_pch */

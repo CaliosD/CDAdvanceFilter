@@ -1,0 +1,18 @@
+PODS:
+  - Kiwi (2.4.0)
+  - MJExtension (3.0.13)
+  - PureLayout (3.0.2)
+
+DEPENDENCIES:
+  - Kiwi
+  - MJExtension
+  - PureLayout
+
+SPEC CHECKSUMS:
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+
+PODFILE CHECKSUM: 2d01b8884bae9baba619593ce61968eb0b48367f
+
+COCOAPODS: 1.0.0

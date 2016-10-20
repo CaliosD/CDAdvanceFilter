@@ -1,0 +1,73 @@
+[
+	{
+	    "sectionTitle": "姓名（学号）",
+	    "sectionField": "username",
+	    "sectionType": "input"
+	},
+	{
+	    "sectionTitle": "班级名称",
+	    "sectionField": "clazzname",
+	    "sectionType": "input"
+	},
+	{
+		"sectionTitle": "空床数",
+		"sectionField": "emptybed",
+		"sectionType": "normalRange"
+	},
+	{
+		"sectionTitle": "入学日期",
+		"sectionField": "entrance",
+		"sectionType": "dateRange"
+	},
+	{
+	    "sectionTitle": "报名年份",
+	    "sectionField": "applyYear",
+	    "sectionType": "singleOption",
+	    "options": [
+	            "2016",
+	            "2015",
+	            "2014",
+	            "2013",
+	            "2012",
+	            "2011"
+	    ]
+	},
+	{
+		"sectionTitle": "政治面貌",
+		"sectionField": "political",
+		"sectionType": "multipleOption",
+		"options": [
+				{
+					"optionId": "1",
+					"optionValue": "党员"
+				},
+				{
+					"optionId": "2",
+					"optionValue": "预备党员"
+				},
+				{
+					"optionId": "3",
+					"optionValue": "团员"
+				},
+				{
+					"optionId": "4",
+					"optionValue": "群众"
+				}
+		]
+	},
+    {
+		"sectionTitle": "是否入宿",
+		"sectionField": "livein",
+		"sectionType": "singleOption",
+		"options": [
+				{
+					"optionId": "1",
+					"optionValue": "是"
+				},
+				{
+					"optionId": "2",
+					"optionValue": "否"
+				}
+		]
+	}
+]

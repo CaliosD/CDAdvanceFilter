@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BE243429D6A8BEF03EF80AA /* libPods-CDAdvanceFilterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13243D7F873F70F7A4F8BFA5 /* libPods-CDAdvanceFilterTests.a */; };
+		96CE1F4B7DD28320E66554FA /* libPods-CDAdvanceFilter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5522E1F71ECD9239525FF67A /* libPods-CDAdvanceFilter.a */; };
+		EE05AA0C1D6C4C460064C30D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE05AA0B1D6C4C460064C30D /* main.m */; };
+		EE05AA0F1D6C4C460064C30D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE05AA0E1D6C4C460064C30D /* AppDelegate.m */; };
+		EE05AA151D6C4C460064C30D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE05AA131D6C4C460064C30D /* Main.storyboard */; };
+		EE05AA171D6C4C460064C30D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE05AA161D6C4C460064C30D /* Assets.xcassets */; };
+		EE05AA1A1D6C4C460064C30D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE05AA181D6C4C460064C30D /* LaunchScreen.storyboard */; };
+		EE05AA251D6C4C460064C30D /* CDAdvanceFilterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE05AA241D6C4C460064C30D /* CDAdvanceFilterTests.m */; };
+		EE05AA4A1D6D7D0E0064C30D /* CDFilterParamManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE05AA441D6D7D0E0064C30D /* CDFilterParamManager.m */; };
+		EE05AA4B1D6D7D0E0064C30D /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = EE05AA451D6D7D0E0064C30D /* MockData.json */; };
+		EE05AA4C1D6D7D0E0064C30D /* CDFilterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE05AA491D6D7D0E0064C30D /* CDFilterCollectionViewCell.m */; };
+		EE05AA531D6D80BE0064C30D /* CDFilterCollectionViewInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE05AA521D6D80BE0064C30D /* CDFilterCollectionViewInputCell.m */; };
+		EE05AA571D6D8B600064C30D /* CDAdvanceFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE05AA561D6D8B600064C30D /* CDAdvanceFilterViewController.m */; };
+		EE05AA5A1D6D9CDC0064C30D /* CDAdvanceFilterDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE05AA591D6D9CDC0064C30D /* CDAdvanceFilterDemoViewController.m */; };
+		EE05AA5D1D6DA0920064C30D /* CDAdvanceFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = EE05AA5C1D6DA0920064C30D /* CDAdvanceFilter.m */; };
+		EE05AA601D6FE5A70064C30D /* CDFilterCollectionViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = EE05AA5F1D6FE5A70064C30D /* CDFilterCollectionViewHeader.m */; };
+		EE453FD31DB74B8300A8CB64 /* SimpleStringSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = EE453FD21DB74B8300A8CB64 /* SimpleStringSpec.m */; };
+		EE5D17E71D6FF19E00E7772C /* CDFilterCollectionViewOptionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D17E61D6FF19E00E7772C /* CDFilterCollectionViewOptionCell.m */; };
+		EE5D17EA1D7025F000E7772C /* CDFilterCollectionViewNormalRangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D17E91D7025F000E7772C /* CDFilterCollectionViewNormalRangeCell.m */; };
+		EE5D18211D7410A600E7772C /* DormitoryFilterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D18201D7410A600E7772C /* DormitoryFilterModel.m */; };
+		EE5D18271D74214D00E7772C /* CDAdvanceFilterController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D18261D74214D00E7772C /* CDAdvanceFilterController.m */; };
+		EE5D182A1D7439FE00E7772C /* NSDictionary+Merge.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D18291D7439FE00E7772C /* NSDictionary+Merge.m */; };
+		EE5D182D1D74450B00E7772C /* CDFilterSection.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D182C1D74450B00E7772C /* CDFilterSection.m */; };
+		EE5D18301D744BDA00E7772C /* CDFilterOption.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D182F1D744BDA00E7772C /* CDFilterOption.m */; };
+		EE5D18331D76E10900E7772C /* CDFilterCollectionViewDateRangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D18321D76E10900E7772C /* CDFilterCollectionViewDateRangeCell.m */; };
+		EE5D18371D77C84600E7772C /* XYDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D18361D77C84600E7772C /* XYDateUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE05AA211D6C4C460064C30D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE05A9FF1D6C4C460064C30D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE05AA061D6C4C460064C30D;
+			remoteInfo = CDAdvanceFilter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		105785AD7745E3A76ED4BE66 /* Pods-CDAdvanceFilter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDAdvanceFilter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDAdvanceFilter/Pods-CDAdvanceFilter.debug.xcconfig"; sourceTree = "<group>"; };
+		13243D7F873F70F7A4F8BFA5 /* libPods-CDAdvanceFilterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CDAdvanceFilterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25A826367C1F246EEBC2D894 /* Pods-CDAdvanceFilterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDAdvanceFilterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CDAdvanceFilterTests/Pods-CDAdvanceFilterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		316B5738E87FB49A03176C20 /* Pods-CDAdvanceFilterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDAdvanceFilterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CDAdvanceFilterTests/Pods-CDAdvanceFilterTests.release.xcconfig"; sourceTree = "<group>"; };
+		5522E1F71ECD9239525FF67A /* libPods-CDAdvanceFilter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CDAdvanceFilter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D77965B708CD6D4BB08CC5 /* Pods-CDAdvanceFilter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CDAdvanceFilter.release.xcconfig"; path = "Pods/Target Support Files/Pods-CDAdvanceFilter/Pods-CDAdvanceFilter.release.xcconfig"; sourceTree = "<group>"; };
+		EE05AA071D6C4C460064C30D /* CDAdvanceFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CDAdvanceFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE05AA0B1D6C4C460064C30D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE05AA0D1D6C4C460064C30D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EE05AA0E1D6C4C460064C30D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EE05AA141D6C4C460064C30D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE05AA161D6C4C460064C30D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE05AA191D6C4C460064C30D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE05AA1B1D6C4C460064C30D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE05AA201D6C4C460064C30D /* CDAdvanceFilterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CDAdvanceFilterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE05AA241D6C4C460064C30D /* CDAdvanceFilterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDAdvanceFilterTests.m; sourceTree = "<group>"; };
+		EE05AA261D6C4C460064C30D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE05AA431D6D7D0E0064C30D /* CDFilterParamManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFilterParamManager.h; sourceTree = "<group>"; };
+		EE05AA441D6D7D0E0064C30D /* CDFilterParamManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFilterParamManager.m; sourceTree = "<group>"; };
+		EE05AA451D6D7D0E0064C30D /* MockData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MockData.json; path = CDAdvanceFilter/DataManager/MockData.json; sourceTree = "<group>"; };
+		EE05AA471D6D7D0E0064C30D /* CDFilterCollectionCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFilterCollectionCellProtocol.h; sourceTree = "<group>"; };
+		EE05AA481D6D7D0E0064C30D /* CDFilterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFilterCollectionViewCell.h; sourceTree = "<group>"; };
+		EE05AA491D6D7D0E0064C30D /* CDFilterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFilterCollectionViewCell.m; sourceTree = "<group>"; };
+		EE05AA511D6D80BE0064C30D /* CDFilterCollectionViewInputCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFilterCollectionViewInputCell.h; sourceTree = "<group>"; };
+		EE05AA521D6D80BE0064C30D /* CDFilterCollectionViewInputCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFilterCollectionViewInputCell.m; sourceTree = "<group>"; };
+		EE05AA541D6D85240064C30D /* CDAdvanceFilter-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CDAdvanceFilter-Prefix.pch"; sourceTree = "<group>"; };
+		EE05AA551D6D8B600064C30D /* CDAdvanceFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAdvanceFilterViewController.h; sourceTree = "<group>"; };
+		EE05AA561D6D8B600064C30D /* CDAdvanceFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAdvanceFilterViewController.m; sourceTree = "<group>"; };
+		EE05AA581D6D9CDC0064C30D /* CDAdvanceFilterDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAdvanceFilterDemoViewController.h; sourceTree = "<group>"; };
+		EE05AA591D6D9CDC0064C30D /* CDAdvanceFilterDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAdvanceFilterDemoViewController.m; sourceTree = "<group>"; };
+		EE05AA5B1D6DA0920064C30D /* CDAdvanceFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAdvanceFilter.h; sourceTree = "<group>"; };
+		EE05AA5C1D6DA0920064C30D /* CDAdvanceFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAdvanceFilter.m; sourceTree = "<group>"; };
+		EE05AA5E1D6FE5A70064C30D /* CDFilterCollectionViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFilterCollectionViewHeader.h; sourceTree = "<group>"; };
+		EE05AA5F1D6FE5A70064C30D /* CDFilterCollectionViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFilterCollectionViewHeader.m; sourceTree = "<group>"; };
+		EE453FD21DB74B8300A8CB64 /* SimpleStringSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleStringSpec.m; sourceTree = "<group>"; };
+		EE5D17E51D6FF19E00E7772C /* CDFilterCollectionViewOptionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFilterCollectionViewOptionCell.h; sourceTree = "<group>"; };
+		EE5D17E61D6FF19E00E7772C /* CDFilterCollectionViewOptionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFilterCollectionViewOptionCell.m; sourceTree = "<group>"; };
+		EE5D17E81D7025F000E7772C /* CDFilterCollectionViewNormalRangeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFilterCollectionViewNormalRangeCell.h; sourceTree = "<group>"; };
+		EE5D17E91D7025F000E7772C /* CDFilterCollectionViewNormalRangeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFilterCollectionViewNormalRangeCell.m; sourceTree = "<group>"; };
+		EE5D181F1D7410A600E7772C /* DormitoryFilterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DormitoryFilterModel.h; path = CDAdvanceFilter/DataManager/DormitoryFilterModel.h; sourceTree = "<group>"; };
+		EE5D18201D7410A600E7772C /* DormitoryFilterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DormitoryFilterModel.m; path = CDAdvanceFilter/DataManager/DormitoryFilterModel.m; sourceTree = "<group>"; };
+		EE5D18251D74214D00E7772C /* CDAdvanceFilterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDAdvanceFilterController.h; sourceTree = "<group>"; };
+		EE5D18261D74214D00E7772C /* CDAdvanceFilterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDAdvanceFilterController.m; sourceTree = "<group>"; };
+		EE5D18281D7439FE00E7772C /* NSDictionary+Merge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Merge.h"; sourceTree = "<group>"; };
+		EE5D18291D7439FE00E7772C /* NSDictionary+Merge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Merge.m"; sourceTree = "<group>"; };
+		EE5D182B1D74450B00E7772C /* CDFilterSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFilterSection.h; sourceTree = "<group>"; };
+		EE5D182C1D74450B00E7772C /* CDFilterSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFilterSection.m; sourceTree = "<group>"; };
+		EE5D182E1D744BDA00E7772C /* CDFilterOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFilterOption.h; sourceTree = "<group>"; };
+		EE5D182F1D744BDA00E7772C /* CDFilterOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFilterOption.m; sourceTree = "<group>"; };
+		EE5D18311D76E10900E7772C /* CDFilterCollectionViewDateRangeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDFilterCollectionViewDateRangeCell.h; sourceTree = "<group>"; };
+		EE5D18321D76E10900E7772C /* CDFilterCollectionViewDateRangeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFilterCollectionViewDateRangeCell.m; sourceTree = "<group>"; };
+		EE5D18351D77C84600E7772C /* XYDateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDateUtils.h; sourceTree = "<group>"; };
+		EE5D18361D77C84600E7772C /* XYDateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDateUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE05AA041D6C4C460064C30D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96CE1F4B7DD28320E66554FA /* libPods-CDAdvanceFilter.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE05AA1D1D6C4C460064C30D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BE243429D6A8BEF03EF80AA /* libPods-CDAdvanceFilterTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69D2047671D1BFA0AE33CB2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5522E1F71ECD9239525FF67A /* libPods-CDAdvanceFilter.a */,
+				13243D7F873F70F7A4F8BFA5 /* libPods-CDAdvanceFilterTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EF8673DF7A7F2685551DC78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				105785AD7745E3A76ED4BE66 /* Pods-CDAdvanceFilter.debug.xcconfig */,
+				70D77965B708CD6D4BB08CC5 /* Pods-CDAdvanceFilter.release.xcconfig */,
+				25A826367C1F246EEBC2D894 /* Pods-CDAdvanceFilterTests.debug.xcconfig */,
+				316B5738E87FB49A03176C20 /* Pods-CDAdvanceFilterTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE05A9FE1D6C4C460064C30D = {
+			isa = PBXGroup;
+			children = (
+				EE05AA091D6C4C460064C30D /* CDAdvanceFilter */,
+				EE05AA231D6C4C460064C30D /* CDAdvanceFilterTests */,
+				EE05AA081D6C4C460064C30D /* Products */,
+				9EF8673DF7A7F2685551DC78 /* Pods */,
+				69D2047671D1BFA0AE33CB2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE05AA081D6C4C460064C30D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE05AA071D6C4C460064C30D /* CDAdvanceFilter.app */,
+				EE05AA201D6C4C460064C30D /* CDAdvanceFilterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE05AA091D6C4C460064C30D /* CDAdvanceFilter */ = {
+			isa = PBXGroup;
+			children = (
+				EE05AA0D1D6C4C460064C30D /* AppDelegate.h */,
+				EE05AA0E1D6C4C460064C30D /* AppDelegate.m */,
+				EE9751BD1DB8B75800EC79D2 /* Demo */,
+				EE05AA411D6D7D0E0064C30D /* CDAdvanceFilter */,
+				EE05AA0A1D6C4C460064C30D /* Supporting Files */,
+			);
+			path = CDAdvanceFilter;
+			sourceTree = "<group>";
+		};
+		EE05AA0A1D6C4C460064C30D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE05AA131D6C4C460064C30D /* Main.storyboard */,
+				EE05AA161D6C4C460064C30D /* Assets.xcassets */,
+				EE05AA181D6C4C460064C30D /* LaunchScreen.storyboard */,
+				EE05AA1B1D6C4C460064C30D /* Info.plist */,
+				EE5D18341D77C84600E7772C /* XYDateUtils */,
+				EE05AA0B1D6C4C460064C30D /* main.m */,
+				EE05AA541D6D85240064C30D /* CDAdvanceFilter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE05AA231D6C4C460064C30D /* CDAdvanceFilterTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE05AA241D6C4C460064C30D /* CDAdvanceFilterTests.m */,
+				EE453FD21DB74B8300A8CB64 /* SimpleStringSpec.m */,
+				EE05AA261D6C4C460064C30D /* Info.plist */,
+			);
+			path = CDAdvanceFilterTests;
+			sourceTree = "<group>";
+		};
+		EE05AA411D6D7D0E0064C30D /* CDAdvanceFilter */ = {
+			isa = PBXGroup;
+			children = (
+				EE05AA5B1D6DA0920064C30D /* CDAdvanceFilter.h */,
+				EE05AA5C1D6DA0920064C30D /* CDAdvanceFilter.m */,
+				EE05AA551D6D8B600064C30D /* CDAdvanceFilterViewController.h */,
+				EE05AA561D6D8B600064C30D /* CDAdvanceFilterViewController.m */,
+				EE5D18251D74214D00E7772C /* CDAdvanceFilterController.h */,
+				EE5D18261D74214D00E7772C /* CDAdvanceFilterController.m */,
+				EE05AA421D6D7D0E0064C30D /* DataManager */,
+				EE05AA461D6D7D0E0064C30D /* View */,
+			);
+			path = CDAdvanceFilter;
+			sourceTree = "<group>";
+		};
+		EE05AA421D6D7D0E0064C30D /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D182E1D744BDA00E7772C /* CDFilterOption.h */,
+				EE5D182F1D744BDA00E7772C /* CDFilterOption.m */,
+				EE5D182B1D74450B00E7772C /* CDFilterSection.h */,
+				EE5D182C1D74450B00E7772C /* CDFilterSection.m */,
+				EE05AA431D6D7D0E0064C30D /* CDFilterParamManager.h */,
+				EE05AA441D6D7D0E0064C30D /* CDFilterParamManager.m */,
+				EE5D18281D7439FE00E7772C /* NSDictionary+Merge.h */,
+				EE5D18291D7439FE00E7772C /* NSDictionary+Merge.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		EE05AA461D6D7D0E0064C30D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE05AA471D6D7D0E0064C30D /* CDFilterCollectionCellProtocol.h */,
+				EE05AA5E1D6FE5A70064C30D /* CDFilterCollectionViewHeader.h */,
+				EE05AA5F1D6FE5A70064C30D /* CDFilterCollectionViewHeader.m */,
+				EE05AA481D6D7D0E0064C30D /* CDFilterCollectionViewCell.h */,
+				EE05AA491D6D7D0E0064C30D /* CDFilterCollectionViewCell.m */,
+				EE05AA511D6D80BE0064C30D /* CDFilterCollectionViewInputCell.h */,
+				EE05AA521D6D80BE0064C30D /* CDFilterCollectionViewInputCell.m */,
+				EE5D17E51D6FF19E00E7772C /* CDFilterCollectionViewOptionCell.h */,
+				EE5D17E61D6FF19E00E7772C /* CDFilterCollectionViewOptionCell.m */,
+				EE5D17E81D7025F000E7772C /* CDFilterCollectionViewNormalRangeCell.h */,
+				EE5D17E91D7025F000E7772C /* CDFilterCollectionViewNormalRangeCell.m */,
+				EE5D18311D76E10900E7772C /* CDFilterCollectionViewDateRangeCell.h */,
+				EE5D18321D76E10900E7772C /* CDFilterCollectionViewDateRangeCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE5D18341D77C84600E7772C /* XYDateUtils */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D18351D77C84600E7772C /* XYDateUtils.h */,
+				EE5D18361D77C84600E7772C /* XYDateUtils.m */,
+			);
+			path = XYDateUtils;
+			sourceTree = "<group>";
+		};
+		EE9751BD1DB8B75800EC79D2 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				EE05AA581D6D9CDC0064C30D /* CDAdvanceFilterDemoViewController.h */,
+				EE05AA591D6D9CDC0064C30D /* CDAdvanceFilterDemoViewController.m */,
+				EE5D181F1D7410A600E7772C /* DormitoryFilterModel.h */,
+				EE5D18201D7410A600E7772C /* DormitoryFilterModel.m */,
+				EE05AA451D6D7D0E0064C30D /* MockData.json */,
+			);
+			name = Demo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE05AA061D6C4C460064C30D /* CDAdvanceFilter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE05AA291D6C4C460064C30D /* Build configuration list for PBXNativeTarget "CDAdvanceFilter" */;
+			buildPhases = (
+				F342217387DBB26C212651F6 /* 📦 Check Pods Manifest.lock */,
+				EE05AA031D6C4C460064C30D /* Sources */,
+				EE05AA041D6C4C460064C30D /* Frameworks */,
+				EE05AA051D6C4C460064C30D /* Resources */,
+				6B4D2FFC5A09524FE57BECD2 /* 📦 Embed Pods Frameworks */,
+				EAB1CA2550BC33FCA80A6D20 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CDAdvanceFilter;
+			productName = CDAdvanceFilter;
+			productReference = EE05AA071D6C4C460064C30D /* CDAdvanceFilter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE05AA1F1D6C4C460064C30D /* CDAdvanceFilterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE05AA2C1D6C4C460064C30D /* Build configuration list for PBXNativeTarget "CDAdvanceFilterTests" */;
+			buildPhases = (
+				7097311FE22CE1C733245E8A /* 📦 Check Pods Manifest.lock */,
+				EE05AA1C1D6C4C460064C30D /* Sources */,
+				EE05AA1D1D6C4C460064C30D /* Frameworks */,
+				EE05AA1E1D6C4C460064C30D /* Resources */,
+				2AD0D04A040DAFD68F62B2D5 /* 📦 Embed Pods Frameworks */,
+				DE616A5D6A6CAE1A1E0AFA20 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE05AA221D6C4C460064C30D /* PBXTargetDependency */,
+			);
+			name = CDAdvanceFilterTests;
+			productName = CDAdvanceFilterTests;
+			productReference = EE05AA201D6C4C460064C30D /* CDAdvanceFilterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE05A9FF1D6C4C460064C30D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Calios;
+				TargetAttributes = {
+					EE05AA061D6C4C460064C30D = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3DQM234Q3D;
+					};
+					EE05AA1F1D6C4C460064C30D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = EE05AA061D6C4C460064C30D;
+					};
+				};
+			};
+			buildConfigurationList = EE05AA021D6C4C460064C30D /* Build configuration list for PBXProject "CDAdvanceFilter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE05A9FE1D6C4C460064C30D;
+			productRefGroup = EE05AA081D6C4C460064C30D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE05AA061D6C4C460064C30D /* CDAdvanceFilter */,
+				EE05AA1F1D6C4C460064C30D /* CDAdvanceFilterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE05AA051D6C4C460064C30D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE05AA1A1D6C4C460064C30D /* LaunchScreen.storyboard in Resources */,
+				EE05AA4B1D6D7D0E0064C30D /* MockData.json in Resources */,
+				EE05AA171D6C4C460064C30D /* Assets.xcassets in Resources */,
+				EE05AA151D6C4C460064C30D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE05AA1E1D6C4C460064C30D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AD0D04A040DAFD68F62B2D5 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDAdvanceFilterTests/Pods-CDAdvanceFilterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B4D2FFC5A09524FE57BECD2 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDAdvanceFilter/Pods-CDAdvanceFilter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7097311FE22CE1C733245E8A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE616A5D6A6CAE1A1E0AFA20 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDAdvanceFilterTests/Pods-CDAdvanceFilterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAB1CA2550BC33FCA80A6D20 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDAdvanceFilter/Pods-CDAdvanceFilter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F342217387DBB26C212651F6 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE05AA031D6C4C460064C30D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5D18271D74214D00E7772C /* CDAdvanceFilterController.m in Sources */,
+				EE5D18331D76E10900E7772C /* CDFilterCollectionViewDateRangeCell.m in Sources */,
+				EE5D182A1D7439FE00E7772C /* NSDictionary+Merge.m in Sources */,
+				EE5D17EA1D7025F000E7772C /* CDFilterCollectionViewNormalRangeCell.m in Sources */,
+				EE5D18301D744BDA00E7772C /* CDFilterOption.m in Sources */,
+				EE05AA571D6D8B600064C30D /* CDAdvanceFilterViewController.m in Sources */,
+				EE05AA5A1D6D9CDC0064C30D /* CDAdvanceFilterDemoViewController.m in Sources */,
+				EE5D18211D7410A600E7772C /* DormitoryFilterModel.m in Sources */,
+				EE05AA4C1D6D7D0E0064C30D /* CDFilterCollectionViewCell.m in Sources */,
+				EE5D17E71D6FF19E00E7772C /* CDFilterCollectionViewOptionCell.m in Sources */,
+				EE05AA601D6FE5A70064C30D /* CDFilterCollectionViewHeader.m in Sources */,
+				EE05AA531D6D80BE0064C30D /* CDFilterCollectionViewInputCell.m in Sources */,
+				EE5D18371D77C84600E7772C /* XYDateUtils.m in Sources */,
+				EE05AA0F1D6C4C460064C30D /* AppDelegate.m in Sources */,
+				EE05AA5D1D6DA0920064C30D /* CDAdvanceFilter.m in Sources */,
+				EE05AA4A1D6D7D0E0064C30D /* CDFilterParamManager.m in Sources */,
+				EE5D182D1D74450B00E7772C /* CDFilterSection.m in Sources */,
+				EE05AA0C1D6C4C460064C30D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE05AA1C1D6C4C460064C30D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE05AA251D6C4C460064C30D /* CDAdvanceFilterTests.m in Sources */,
+				EE453FD31DB74B8300A8CB64 /* SimpleStringSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE05AA221D6C4C460064C30D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE05AA061D6C4C460064C30D /* CDAdvanceFilter */;
+			targetProxy = EE05AA211D6C4C460064C30D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE05AA131D6C4C460064C30D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE05AA141D6C4C460064C30D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE05AA181D6C4C460064C30D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE05AA191D6C4C460064C30D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE05AA271D6C4C460064C30D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE05AA281D6C4C460064C30D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE05AA2A1D6C4C460064C30D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 105785AD7745E3A76ED4BE66 /* Pods-CDAdvanceFilter.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CDAdvanceFilter/CDAdvanceFilter-Prefix.pch";
+				INFOPLIST_FILE = CDAdvanceFilter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shtdtech.TestDemoUniversal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE05AA2B1D6C4C460064C30D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70D77965B708CD6D4BB08CC5 /* Pods-CDAdvanceFilter.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CDAdvanceFilter/CDAdvanceFilter-Prefix.pch";
+				INFOPLIST_FILE = CDAdvanceFilter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shtdtech.TestDemoUniversal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EE05AA2D1D6C4C460064C30D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25A826367C1F246EEBC2D894 /* Pods-CDAdvanceFilterTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CDAdvanceFilterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Calios.CDAdvanceFilterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CDAdvanceFilter.app/CDAdvanceFilter";
+			};
+			name = Debug;
+		};
+		EE05AA2E1D6C4C460064C30D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 316B5738E87FB49A03176C20 /* Pods-CDAdvanceFilterTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CDAdvanceFilterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Calios.CDAdvanceFilterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CDAdvanceFilter.app/CDAdvanceFilter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE05AA021D6C4C460064C30D /* Build configuration list for PBXProject "CDAdvanceFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE05AA271D6C4C460064C30D /* Debug */,
+				EE05AA281D6C4C460064C30D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE05AA291D6C4C460064C30D /* Build configuration list for PBXNativeTarget "CDAdvanceFilter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE05AA2A1D6C4C460064C30D /* Debug */,
+				EE05AA2B1D6C4C460064C30D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE05AA2C1D6C4C460064C30D /* Build configuration list for PBXNativeTarget "CDAdvanceFilterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE05AA2D1D6C4C460064C30D /* Debug */,
+				EE05AA2E1D6C4C460064C30D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE05A9FF1D6C4C460064C30D /* Project object */;
+}
