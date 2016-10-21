@@ -33,6 +33,7 @@
 		EE5D18301D744BDA00E7772C /* CDFilterOption.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D182F1D744BDA00E7772C /* CDFilterOption.m */; };
 		EE5D18331D76E10900E7772C /* CDFilterCollectionViewDateRangeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D18321D76E10900E7772C /* CDFilterCollectionViewDateRangeCell.m */; };
 		EE5D18371D77C84600E7772C /* XYDateUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D18361D77C84600E7772C /* XYDateUtils.m */; };
+		EED98DA61DB9F5CA005431B8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EED98DA51DB9F5CA005431B8 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		EE5D18321D76E10900E7772C /* CDFilterCollectionViewDateRangeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDFilterCollectionViewDateRangeCell.m; sourceTree = "<group>"; };
 		EE5D18351D77C84600E7772C /* XYDateUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYDateUtils.h; sourceTree = "<group>"; };
 		EE5D18361D77C84600E7772C /* XYDateUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYDateUtils.m; sourceTree = "<group>"; };
+		EED98DA51DB9F5CA005431B8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		EE05A9FE1D6C4C460064C30D = {
 			isa = PBXGroup;
 			children = (
+				EED98DA51DB9F5CA005431B8 /* README.md */,
 				EE05AA091D6C4C460064C30D /* CDAdvanceFilter */,
 				EE05AA231D6C4C460064C30D /* CDAdvanceFilterTests */,
 				EE05AA081D6C4C460064C30D /* Products */,
@@ -482,6 +485,7 @@
 				EE05AA601D6FE5A70064C30D /* CDFilterCollectionViewHeader.m in Sources */,
 				EE05AA531D6D80BE0064C30D /* CDFilterCollectionViewInputCell.m in Sources */,
 				EE5D18371D77C84600E7772C /* XYDateUtils.m in Sources */,
+				EED98DA61DB9F5CA005431B8 /* README.md in Sources */,
 				EE05AA0F1D6C4C460064C30D /* AppDelegate.m in Sources */,
 				EE05AA5D1D6DA0920064C30D /* CDAdvanceFilter.m in Sources */,
 				EE05AA4A1D6D7D0E0064C30D /* CDFilterParamManager.m in Sources */,

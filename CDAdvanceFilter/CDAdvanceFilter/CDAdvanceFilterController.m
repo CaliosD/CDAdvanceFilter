@@ -313,7 +313,7 @@ static UIView *CDAdvanceFilterFirstResponder(UIView *view)
         [UIView beginAnimations:nil context:nil];
         [UIView setAnimationCurve:(UIViewAnimationCurve)keyboardInfo[UIKeyboardAnimationCurveUserInfoKey]];
         [UIView setAnimationDuration:[keyboardInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue]];
-        self.collectionView.contentInset = self.originalTableContentInset;
+        self.collectionView.contentInset = UIEdgeInsetsZero; //self.originalTableContentInset;
         self.collectionView.scrollIndicatorInsets = tableScrollIndicatorInsets;
         self.originalTableContentInset = UIEdgeInsetsZero;
         [UIView commitAnimations];
