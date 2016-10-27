@@ -7,6 +7,7 @@
 //
 
 #import "CDFilterCollectionViewOptionCell.h"
+#import "EdgeInsetsLabel.h"
 
 @interface CDFilterCollectionViewOptionCell()
 
@@ -19,12 +20,13 @@
 
 - (void)setUp
 {
-    _optionLabel = [UILabel newAutoLayoutView];
+    _optionLabel = [EdgeInsetsLabel newAutoLayoutView];
     
     _optionLabel.backgroundColor = [UIColor whiteColor];
     _optionLabel.lineBreakMode = NSLineBreakByWordWrapping;
     _optionLabel.textColor = CDFilterThemeColor;
-    _optionLabel.numberOfLines = 0;
+    _optionLabel.numberOfLines = 1;
+    _optionLabel.lineBreakMode = NSLineBreakByTruncatingTail;
     _optionLabel.textAlignment = NSTextAlignmentCenter;
     _optionLabel.font = [UIFont systemFontOfSize:CDFilterCVOptionFont];
     _optionLabel.layer.borderColor = CDFilterThemeColor.CGColor;

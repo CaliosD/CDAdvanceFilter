@@ -125,6 +125,7 @@ static UIView *CDAdvanceFilterFirstResponder(UIView *view)
 {
     [_p_currentFilterDict removeAllObjects];
     
+    // Get input or range type current value.
     for (UIView *v in self.collectionView.subviews) {
         if ([v respondsToSelector:@selector(currentValue)]) {
             NSDictionary *dict = [v performSelector:@selector(currentValue)];
@@ -133,12 +134,12 @@ static UIView *CDAdvanceFilterFirstResponder(UIView *view)
     }
     
     NSLog(@"===>1 dic = %@", _p_currentFilterDict);
-    
+    // Get option type current value.
     for (NSIndexPath *indexPath in [self.collectionView indexPathsForSelectedItems]) {
-        CDFilterCollectionViewCell *cell = (CDFilterCollectionViewCell *)[self.collectionView cellForItemAtIndexPath:indexPath];
-        if ([cell respondsToSelector:@selector(paramWithOption:)]) {
-            NSDictionary *param = [cell performSelector:@selector(paramWithOption:) withObject:cell.option];
-            [_p_currentFilterDict addEntriesFromDictionary:param];
+        CDFilterSection *section = self.filterSections[indexPath.section];
+        id option = section.options[indexPath.item];
+        if ([option isKindOfClass:[NSDictionary class]] && [option objectForKey:@"optionId"]) {
+            [_p_currentFilterDict addEntriesFromDictionary:@{section.sectionField : option[@"optionId"]}];
         }
     }
     
@@ -353,7 +354,11 @@ static UIView *CDAdvanceFilterFirstResponder(UIView *view)
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
 {
-    return CGSizeMake([collectionView bounds].size.width, CDFilterCVCellOptionHeight);
+    CDFilterSection *s = [self sectionAtIndex:section];
+    if (![s.sectionType isEqualToString:CDFilterCVCellTypeInput]) {
+        return CGSizeMake([collectionView bounds].size.width, CDFilterCVCellOptionHeight);
+    }
+    return CGSizeZero;
 }
 
 - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
@@ -361,10 +366,12 @@ static UIView *CDAdvanceFilterFirstResponder(UIView *view)
     CDFilterSection *section = [self sectionAtIndex:indexPath.section];
     
     UICollectionReusableView *reusableView = nil;
-    if (kind == UICollectionElementKindSectionHeader) {
-        CDFilterCollectionViewHeader *header = (CDFilterCollectionViewHeader *)[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([CDFilterCollectionViewHeader class]) forIndexPath:indexPath];
-        [header configureCVHeaderWithTitle:section.sectionTitle];
-        reusableView = header;
+    if (![section.sectionType isEqualToString:CDFilterCVCellTypeInput]) {
+        if (kind == UICollectionElementKindSectionHeader) {
+            CDFilterCollectionViewHeader *header = (CDFilterCollectionViewHeader *)[collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:NSStringFromClass([CDFilterCollectionViewHeader class]) forIndexPath:indexPath];
+            [header configureCVHeaderWithTitle:section.sectionTitle];
+            reusableView = header;
+        }
     }
     return reusableView;
 }

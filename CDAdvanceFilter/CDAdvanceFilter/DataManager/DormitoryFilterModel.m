@@ -19,11 +19,11 @@
                  },
              @{
                  CDFilterSectionFieldKey:@"political",
-                 CDFilterSectionColumnCountKey:@"4",
+                 CDFilterSectionColumnCountKey:@"2",
                  },
              @{
                  CDFilterSectionFieldKey:@"livein",
-                 CDFilterSectionColumnCountKey:@"2",
+                 CDFilterSectionColumnCountKey:@"3",
                  }
              ];
 }
