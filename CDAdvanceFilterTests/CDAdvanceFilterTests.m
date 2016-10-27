@@ -33,7 +33,14 @@
     // This is an example of a performance test case.
     [self measureBlock:^{
         // Put the code you want to measure the time of here.
+        NSLog(@"Here's test performance example.");
     }];
 }
+
+// Since this case doesn't start with `test`, it won't be excuted.
+- (void)DISABLE_testExample {
+    
+}
+
 
 @end
