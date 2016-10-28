@@ -16,5 +16,5 @@
 
 ##### Optimization:
 
-- Auto-correct for range type. eg: type "5 - 1" in normal range, auto-correct it to "1 - 5" after clicking "Confirm" button.
-- The same for date range type.
+~~- Auto-correct for range type. eg: type "5 - 1" in normal range, auto-correct it to "1 - 5" after clicking "Confirm" button.~~
+~~- The same for date range type.~~
