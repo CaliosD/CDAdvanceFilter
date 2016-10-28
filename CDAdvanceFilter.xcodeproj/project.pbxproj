@@ -289,6 +289,7 @@
 				EE05AA051D6C4C460064C30D /* Resources */,
 				6B4D2FFC5A09524FE57BECD2 /* 📦 Embed Pods Frameworks */,
 				EAB1CA2550BC33FCA80A6D20 /* 📦 Copy Pods Resources */,
+				F797616FEE411CC06AF63D7F /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -309,6 +310,7 @@
 				EE05AA1E1D6C4C460064C30D /* Resources */,
 				2AD0D04A040DAFD68F62B2D5 /* 📦 Embed Pods Frameworks */,
 				DE616A5D6A6CAE1A1E0AFA20 /* 📦 Copy Pods Resources */,
+				B55426E1C5FCC45C7F7EBBE0 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -331,7 +333,7 @@
 				TargetAttributes = {
 					EE05AA061D6C4C460064C30D = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 3DQM234Q3D;
+						DevelopmentTeam = FM4M73YW27;
 					};
 					EE05AA1F1D6C4C460064C30D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -425,6 +427,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		B55426E1C5FCC45C7F7EBBE0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDAdvanceFilterTests/Pods-CDAdvanceFilterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DE616A5D6A6CAE1A1E0AFA20 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,6 +485,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F797616FEE411CC06AF63D7F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CDAdvanceFilter/Pods-CDAdvanceFilter-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -633,6 +665,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = FM4M73YW27;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CDAdvanceFilter/CDAdvanceFilter-Prefix.pch";
 				INFOPLIST_FILE = CDAdvanceFilter/Info.plist;
@@ -649,6 +682,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = FM4M73YW27;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CDAdvanceFilter/CDAdvanceFilter-Prefix.pch";
 				INFOPLIST_FILE = CDAdvanceFilter/Info.plist;

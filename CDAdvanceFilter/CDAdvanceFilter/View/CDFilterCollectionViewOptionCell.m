@@ -46,7 +46,7 @@
 {
     if (!self.didSetupConstraints) {
         
-        [_optionLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(CDFilterCVPaddingTop, CDFilterCVPaddingLeft, CDFilterCVPaddingBottom, CDFilterCVPaddingRight)];
+        [_optionLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, 0, CDFilterCVPaddingBottom, 0)];
         
         self.didSetupConstraints = YES;
     }

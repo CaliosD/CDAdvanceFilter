@@ -347,16 +347,21 @@ static UIView *CDAdvanceFilterFirstResponder(UIView *view)
 {
     CDFilterSection *section = [self sectionAtIndex:indexPath.section];
     if (section.columnCount && section.columnCount > 0) {
-        return CGSizeMake(CGRectGetWidth(collectionView.frame)/section.columnCount - 2, CDFilterCVCellOptionHeight);
+        return CGSizeMake((CGRectGetWidth(collectionView.frame) - (CDFilterCVPaddingLeft + CDFilterCVPaddingRight) - ((section.columnCount - 1)*CDFilterCVPadding))/section.columnCount , CDFilterCVCellOptionHeight);
     }
-    return CGSizeMake(CGRectGetWidth(collectionView.frame), CDFilterCVCellOptionHeight);
+    return CGSizeMake(CGRectGetWidth(collectionView.frame), CDFilterCVCellFieldHeight);
+}
+
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+{
+    return UIEdgeInsetsMake(0, CDFilterCVPaddingLeft, 0, CDFilterCVPaddingRight);
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
 {
     CDFilterSection *s = [self sectionAtIndex:section];
     if (![s.sectionType isEqualToString:CDFilterCVCellTypeInput]) {
-        return CGSizeMake([collectionView bounds].size.width, CDFilterCVCellOptionHeight);
+        return CGSizeMake([collectionView bounds].size.width, CDFilterCVCellHeaderHeight);
     }
     return CGSizeZero;
 }

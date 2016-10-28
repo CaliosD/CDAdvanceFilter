@@ -108,11 +108,33 @@
 {
     NSMutableString *result = [NSMutableString string];
     if (!CDFilter_stringIsBlank(_startTF.text)) {
-        [result appendString:_startTF.text];
+        if (CDFilter_stringIsBlank(_endTF.text)) {
+            [result appendString:_startTF.text];
+        }
+        else
+        {
+            if ([_startTF.text integerValue] < [_endTF.text integerValue]) {
+                [result appendString:_startTF.text];
+            }
+            else{
+                [result appendString:_endTF.text];
+            }
+        }
     }
     if (!CDFilter_stringIsBlank(_endTF.text)) {
         [result appendString:@","];
-        [result appendString:_endTF.text];
+        if (CDFilter_stringIsBlank(_startTF.text)) {
+            [result appendString:_endTF.text];
+        }
+        else
+        {
+            if ([_startTF.text integerValue] < [_endTF.text integerValue]) {
+                [result appendString:_endTF.text];
+            }
+            else{
+                [result appendString:_startTF.text];
+            }
+        }
     }
     else {
         if (!CDFilter_stringIsBlank(_startTF.text)) {

@@ -34,7 +34,7 @@
 - (void)updateConstraints
 {
     if (!self.didSetupConstraints) {
-        [_titleLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(CDFilterCVPaddingTop, CDFilterCVPaddingLeft, CDFilterCVPaddingBottom, CDFilterCVPaddingRight)];
+        [_titleLabel autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, CDFilterCVPaddingLeft, 0, CDFilterCVPaddingRight)];
         
         self.didSetupConstraints = YES;
     }

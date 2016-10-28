@@ -50,13 +50,17 @@
 
 
 // Size
-#define CDFilterCVCellOptionHeight  CDFilter_isiPhone ? 45 : 50
-#define CDFilterCVHeaderFont        CDFilter_isiPhone ? 15 : 20
-#define CDFilterCVOptionFont        CDFilter_isiPhone ? 12 : 15
-#define CDFilterCVPaddingLeft       CDFilter_isiPhone ? 8 : 12
-#define CDFilterCVPaddingRight      CDFilter_isiPhone ? 8 : 12
-#define CDFilterCVPaddingTop        CDFilter_isiPhone ? 8 : 12
-#define CDFilterCVPaddingBottom     CDFilter_isiPhone ? 8 : 12
+#define CDFilterCVCellHeaderHeight  (CDFilter_isiPhone ? 39 : 47)
+#define CDFilterCVCellFieldHeight   (CDFilter_isiPhone ? 48 : 56)
+#define CDFilterCVCellOptionHeight  (CDFilter_isiPhone ? 36 : 44)
+#define CDFilterCVHeaderFont        (CDFilter_isiPhone ? 15 : 20)
+#define CDFilterCVOptionFont        (CDFilter_isiPhone ? 12 : 15)
+#define CDFilterCVPaddingLeft       (CDFilter_isiPhone ? 12 : 16)
+#define CDFilterCVPaddingRight      (CDFilter_isiPhone ? 12 : 16)
+#define CDFilterCVPaddingTop        (CDFilter_isiPhone ? 8 : 12)
+#define CDFilterCVPaddingBottom     (CDFilter_isiPhone ? 8 : 12)
+#define CDFilterCVPadding           (CDFilter_isiPhone ? 8 : 12)
+
 
 
 // Section Keys
